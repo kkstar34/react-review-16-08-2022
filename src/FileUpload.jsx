@@ -19,9 +19,9 @@ class FileUpload extends Component {
 
 	  reader.addEventListener("load", () => {
 		//transforme en base 64
-		console.log(reader.progress)
+		console.log(reader.result)
      	this.setState({selectedFile: reader.result})
-      }, false);
+      });
 	
 	};
 	
